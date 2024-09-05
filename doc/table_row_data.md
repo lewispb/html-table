@@ -48,7 +48,7 @@ output:
 See the 'examples' directory under 'doc' for more examples.
 
 ## Mixins
-Table::Row::Data mixes in Attribute_Handler.    
+Table::Row::Data mixes in Attribute_Handler.
 
 ## Class Methods
 ```
@@ -56,7 +56,7 @@ Table::Row::Data.new(arg=nil)
 Table::Row::Data.new(arg=nil){ |t| ... }
 ```
 Creates a new table.  You can set attributes for the Table::Row::Data by passing a block.
-   
+
 If `arg` is supplied, it is automatically interpreted to be content.
 This is a shortcut for Table::Row::Data.new{ |d| d.content = '...' }.
 
@@ -90,11 +90,8 @@ Returns all html content for the TableData instance.
 
 ## Notes
 The end tags for Table::Row::Data objects are are the same line as the begin tags.
-    
+
 String attributes are quoted. Numeric attributes are not.
 
 Some attributes have type checking. Some check for valid arguments. In
 the latter case, it is case-insensitive.
-
-Using a non-standard extension (e.g. "background") will send a warning to
-STDERR in $VERBOSE (-w) mode.

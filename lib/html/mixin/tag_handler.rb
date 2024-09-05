@@ -41,7 +41,6 @@ module HTML
       end
 
       def blink=(bool)
-        warn BlinkWarning, "The 'blink' tag is very annoying. Please reconsider."
         handle_physical_tag('blink', bool)
         @blink = bool
       end

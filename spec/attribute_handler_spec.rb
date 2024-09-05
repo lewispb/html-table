@@ -8,16 +8,8 @@ require 'rspec'
 require 'html/table'
 
 RSpec.describe HTML::Mixin::AttributeHandler do
-  before(:all) do
-    NonStandardExtensionWarning.disable
-  end
-
   before do
     @table = HTML::Table.new(['foo', 1, 'bar'])
-  end
-
-  after(:all) do
-    NonStandardExtensionWarning.enable
   end
 
   example 'abbr_basic' do

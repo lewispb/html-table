@@ -8,16 +8,8 @@ require 'rspec'
 require 'html/table'
 
 RSpec.describe HTML::Mixin::TagHandler do
-  before(:all) do
-    BlinkWarning.disable
-  end
-
   before do
     @tcontent = HTML::Table::Content.new('test')
-  end
-
-  after(:all) do
-    BlinkWarning.enable
   end
 
   example 'bold' do

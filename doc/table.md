@@ -44,8 +44,8 @@ See the 'examples' directory for more examples.
 
 ## Mixins
 `Table` is a subclass of `Array`, and therefore mixes in `Enumerable`. The
-`push`, `unshift` and `[]=` methods have been modified. See below for details.    
-    
+`push`, `unshift` and `[]=` methods have been modified. See below for details.
+
 Table also mixes in the `AttributeHandler` module which provides methods
 for adding attributes to each of the tag types. See attributes.md for
 more details.
@@ -64,7 +64,7 @@ Table.new(arg=nil){ |t| ... }
 
 Creates a new Table instance.  You can set attributes for the Table by
 passing a block.
-    
+
 If `arg` is supplied, it is automatically interpreted to be content. This
 is a shortcut for `Table.new{ |t| t.content = '...' }`.
 
@@ -79,7 +79,7 @@ Sets the `global_end_tags` class variable. This determines class-wide, for
 those classes where end tags are optional, whether or not end tags are
 included in the final html. Classes where end tags are not optional are
 not affected.
-    
+
 If set to false, this overrides individual class end tags settings.
 
 ## Instance Methods
@@ -139,9 +139,6 @@ String attributes are quoted. Numeric attributes are not.
 Some attributes have type checking. Some check for valid arguments. In
 the latter case, it is case-insensitive. See the documentation on
 specific methods for more details.
-
-Using a non-standard extension (e.g. "background") will send a warning to
-STDERR in `$VERBOSE` (-w) mode.
 
 ## Known Bugs
 None that I'm aware of. Please report bugs on the project page at

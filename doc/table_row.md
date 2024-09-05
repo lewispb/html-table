@@ -69,7 +69,7 @@ Table::Row.new(arg=nil){ |t| ... }
 ```
 
 Creates a new table. You can set attributes for the TableRow by passing a block.
-    
+
 If `arg` is supplied, it is automatically interpreted to be content.
 This is a shortcut for Table::Row.new{ |r| r.content = '...' }.
 
@@ -109,6 +109,3 @@ String attributes are quoted. Numeric attributes are not.
 
 Some attributes have type checking. Some check for valid arguments. In
 the latter case, it is case-insensitive.
-
-Using a non-standard extension (e.g. "background") will send a warning to
-STDERR in $VERBOSE (-w) mode.

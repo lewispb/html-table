@@ -60,8 +60,8 @@ See the 'examples' directory under 'doc' for more examples.
 
 ## Mixins
 Table is a subclass of Array, and therefore mixes in Enumerable. The
-`push`, `unshift` and `[]=` methods have been modified. See below for details.    
-   
+`push`, `unshift` and `[]=` methods have been modified. See below for details.
+
 Table also mixes in `AttributeHandler` which provides methods for adding
 attributes to each of the tag types. See attributes.rdoc for more details.
 
@@ -74,16 +74,12 @@ A Table consists of `Table::Row`, `Table::Caption`, `Table::ColGroup,`
 `Table::ColGroup` objects consist of `Table::ColGroup::Col` objects.
 
 `Table::Head`, `Table::Body` and `Table::Foot` objects consist of `Table::Row` objects.
-    
+
 String attributes are quoted. Numeric attributes are not.
 
 Some attributes have type checking. Some check for valid arguments. In
 the latter case, it is case-insensitive. See the documentation on
 specific methods for more details.
-
-Using a non-standard extension (e.g. "background") will emit a
-`NonStandardExtensionWarning`. See the documentation for `structured_warnings`
-for more information on how to control these.
 
 ## Documentation
 
